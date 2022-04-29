@@ -17,6 +17,9 @@ const GlobalStyle = createGlobalStyle`
     #__next {
       height: 100%;
     }
+    a {
+      color: ${theme.colors.gray}
+    }
   `}
 `;
 
