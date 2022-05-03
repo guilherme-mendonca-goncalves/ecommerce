@@ -6,11 +6,14 @@ export enum ProductsActionTypes {
 
 export type Product = {
   id: number;
-  name: string;
+  title: string;
   description: string;
-  image: Image;
   price: number;
-  featured: boolean;
+  image: Image;
+  brand: string;
+  category: string;
+  thumbnail: string;
+  images: Array<string>;
 }
 
 export type ProductsAction = {

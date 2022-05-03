@@ -2,6 +2,7 @@ import { Header } from '@src/components';
 import { cartActions } from '@src/store/modules/cart';
 import { Product } from '@src/store/modules/products/products.types';
 import { AppState } from '@src/store/store.types';
+import { PageStyle } from '@src/styles';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
@@ -40,18 +41,17 @@ const ProductPage = () => {
       </Head>
       <Header />
       <main>
-        {product ? (
-          <>
-            <h1>{product.name}</h1>
-            <button type="button" onClick={handleAddToCart}>Adicionar ao carrinho</button>
-          </>
-        ) : (
-          <p>Produto não encontrado.</p>
-        )}
+        <PageStyle.Container>
+          {product ? (
+            <>
+              <h1>{product.title}</h1>
+              <button type="button" onClick={handleAddToCart}>Adicionar ao carrinho</button>
+            </>
+          ) : (
+            <p>Produto não encontrado.</p>
+          )}
+        </PageStyle.Container>
       </main>
-      <footer>
-        <p>Todos os direitos reservados.</p>
-      </footer>
     </>
   );
 };

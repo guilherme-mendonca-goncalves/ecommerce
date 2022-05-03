@@ -7,18 +7,26 @@ const GlobalStyle = createGlobalStyle`
       margin: 0px;
       padding: 0px;
     }
+
     html {
       height: 100%;
     }
+
     body {
-      background-color: ${theme.colors.white};
+      background-color: ${theme.colors.light};
       height: 100%;
     }
+
     #__next {
       height: 100%;
     }
+
     a {
       color: ${theme.colors.gray}
+    }
+
+    ul {
+      list-style: none;
     }
   `}
 `;

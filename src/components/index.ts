@@ -1,3 +1,3 @@
 export { default as DataHandler } from './DataHandler';
-export { default as FeaturedProducts } from './FeaturedProducts';
+export { default as ProductsHandler } from './ProductsHandler';
 export { default as Header } from './Header';
