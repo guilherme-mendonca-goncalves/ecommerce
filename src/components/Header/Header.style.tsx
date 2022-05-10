@@ -23,15 +23,6 @@ export const Brand = styled.p`
   `}
 `;
 
-export const Search = styled.div`
-  ${({ theme }) => css`
-    color: ${theme.colors.white};
-    display: flex;
-    flex: 2;
-    justify-content: center;
-  `}
-`;
-
 export const Cart = styled.div`
   ${({ theme }) => css`
     color: ${theme.colors.white};

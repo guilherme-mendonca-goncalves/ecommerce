@@ -9,8 +9,18 @@ const setLoading = (loading: boolean) => {
   };
 };
 
+const setSearch = (term: string | null) => {
+  return {
+    type: CommonActionTypes.SET_SEARCH,
+    payload: {
+      search: term
+    }
+  };
+};
+
 const commonActions = {
-  setLoading
+  setLoading,
+  setSearch
 };
 
 export default commonActions;

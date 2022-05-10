@@ -13,7 +13,6 @@ const CartReducer = (state = initialState, action: CartAction) => {
       if (!product) {
         return state;
       }
-      console.log('a', state);
       return state.filter((element) => element.id !== product.id);
     }
     default: {

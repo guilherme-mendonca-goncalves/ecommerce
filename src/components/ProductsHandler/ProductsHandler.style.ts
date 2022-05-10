@@ -1,7 +1,12 @@
 import styled, { css } from 'styled-components';
 import { ProductsHandlerStyleProps } from './ProductsHandler.types';
 
-export const Wrapper = styled.ul`
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const List = styled.ul`
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
@@ -44,4 +49,8 @@ export const Price = styled.p`
 
 export const Title = styled.p`
   color: black;
+`;
+
+export const Results = styled.div`
+  margin-bottom: 15px;
 `;

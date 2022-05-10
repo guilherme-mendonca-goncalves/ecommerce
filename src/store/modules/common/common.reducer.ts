@@ -1,7 +1,8 @@
 import { CommonAction, CommonActionTypes, CommonState } from './common.types';
 
 const initialState: CommonState = {
-  loading: false
+  loading: false,
+  search: null
 };
 
 const CommonReducer = (state = initialState, action: CommonAction) => {
@@ -11,6 +12,13 @@ const CommonReducer = (state = initialState, action: CommonAction) => {
       return {
         ...state,
         loading
+      };
+    }
+    case CommonActionTypes.SET_SEARCH: {
+      const { search } = action.payload;
+      return {
+        ...state,
+        search
       };
     }
     default: {

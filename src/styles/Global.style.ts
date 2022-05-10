@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
     body {
       background-color: ${theme.colors.light};
       height: 100%;
+      font-family: Arial;
     }
 
     #__next {
