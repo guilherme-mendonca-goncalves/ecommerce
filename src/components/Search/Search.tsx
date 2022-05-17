@@ -28,9 +28,9 @@ const Search = ({ onChange }: SearchProps) => {
   };
 
   return (
-    <Style.Form onSubmit={handleOnSubmit}>
-      <Style.Input onChange={handleInputChange} onBlur={handleInputBlur} />
-      <button type="submit">Buscar</button>
+    <Style.Form onSubmit={handleOnSubmit} data-testid="search">
+      <Style.Input onChange={handleInputChange} onBlur={handleInputBlur} data-testid="search-input" />
+      <button type="submit" data-testid="search-button">Buscar</button>
     </Style.Form>
   );
 };
